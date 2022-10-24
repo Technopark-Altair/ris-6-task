@@ -1,1 +1,7 @@
-<h1>Привет</h1>
+<h1>Привет {{name}}</h1>
+<input type="text" name="text" [(ngModel)]="text" placeholder="Text item">
+<p>{{text}}</p>
+<input type="number" name="price" [(ngModel)]="price" placeholder="Price item">
+<p>{{price}}</p>
+<button (click)="addItem(text, price)">addItem</button>
+<p>{{itemAdded}}</p>
